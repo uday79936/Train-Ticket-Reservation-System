@@ -30,6 +30,8 @@ go to security group and edit the inbound rules
 
 to keep it as all tcp  and anywhere ipv4
 
+cp -r TrainBook-1.0.0-SNAPSHOT.war ~/Train-Ticket-Reservation-System/apache-tomcat-9.0.102/webapps
+
 cd manager/
 
 to comment the valve
