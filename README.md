@@ -13,11 +13,6 @@ sudo apt update         to update all the packages
 
 and then install java 11 version "sudo apt install openjdk-11-jre-headless"
 
-ubuntu@ip-172-31-25-35:~$ java --version
-openjdk 11.0.26 2025-01-21
-OpenJDK Runtime Environment (build 11.0.26+4-post-Ubuntu-1ubuntu124.04)
-OpenJDK 64-Bit Server VM (build 11.0.26+4-post-Ubuntu-1ubuntu124.04, mixed mode, sharing)
-
 Now we have to clone the code from git
 
 ubuntu@ip-172-31-25-35:~$ git clone https://github.com/HouariZegai/Calculator.git
