@@ -24,10 +24,6 @@ maven validate   to validate the project
 
 mvn test          to test the project
 
-ubuntu@ip-172-31-25-35:~/Calculator$ ls
-LICENSE  README.md  pom.xml  screenshots  src  target
-ubuntu@ip-172-31-25-35:~/Calculator$
-
 tar -xvf  apache-tomcat-9.0.102.tar.gz
 
 go to security group and edit the inbound rules
