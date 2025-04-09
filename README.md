@@ -24,6 +24,8 @@ maven validate   to validate the project
 
 mvn test          to test the project
 
+wget <link> to install the tar file
+
 tar -xvf  apache-tomcat-9.0.102.tar.gz
 
 go to cd bin
