@@ -26,6 +26,15 @@ mvn test          to test the project
 
 tar -xvf  apache-tomcat-9.0.102.tar.gz
 
+go to cd bin
+./startup.sh
+
+to start the tomcat
+
+we have to shutdown the server means 
+
+./shutdown.sh
+
 go to security group and edit the inbound rules
 
 to keep it as all tcp  and anywhere ipv4
