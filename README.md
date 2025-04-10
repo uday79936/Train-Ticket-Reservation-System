@@ -1,3 +1,5 @@
+#java
+
 let's we have to navigate aws console and then go to  EC2 instance (or) server
 and then start a server and take it as ssh key:
 
