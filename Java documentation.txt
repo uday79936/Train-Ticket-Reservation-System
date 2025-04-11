@@ -1,0 +1,127 @@
+🚀 Deploying Java Application on AWS EC2 with Tomcat
+This guide walks through the steps to deploy a Java application on an AWS EC2 instance using Tomcat server.
+
+🔐 Step 1: Connect to EC2 Instance via SSH
+Navigate to the directory where your .pem file is located:
+
+bash
+Copy
+Edit
+cd Downloads/
+Connect to your EC2 instance using the SSH key:
+
+bash
+Copy
+Edit
+ssh -i "Test.pem" ubuntu@ec2-98-81-227-245.compute-1.amazonaws.com
+☕ Step 2: Install Java 11
+Update all packages:
+
+bash
+Copy
+Edit
+sudo apt update
+Install Java 11:
+
+bash
+Copy
+Edit
+sudo apt install openjdk-11-jre-headless
+🔁 Step 3: Clone Project from Git
+Clone the required Git repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/HouariZegai/Calculator.git
+📦 Step 4: Install Maven & Build Project
+Install Maven:
+
+bash
+Copy
+Edit
+sudo apt install maven
+Validate the project:
+
+bash
+Copy
+Edit
+mvn validate
+Run the test cases:
+
+bash
+Copy
+Edit
+mvn test
+🧰 Step 5: Install and Start Tomcat Server
+Download and extract Tomcat:
+
+bash
+Copy
+Edit
+wget <tomcat-tar-url>
+tar -xvf apache-tomcat-9.0.102.tar.gz
+Navigate to the bin directory and start the server:
+
+bash
+Copy
+Edit
+cd apache-tomcat-9.0.102/bin
+./startup.sh
+To shutdown the server:
+
+bash
+Copy
+Edit
+./shutdown.sh
+🔐 Step 6: Configure Security Group
+Edit the EC2 instance security group:
+
+Go to Inbound rules
+
+Add rule:
+
+Type: All TCP
+
+Source: Anywhere (IPv4) 0.0.0.0/0
+
+📂 Step 7: Deploy WAR File to Tomcat
+Copy the WAR file to Tomcat’s webapps directory:
+
+bash
+Copy
+Edit
+cp -r TrainBook-1.0.0-SNAPSHOT.war ~/Train-Ticket-Reservation-System/apache-tomcat-9.0.102/webapps
+⚙️ Step 8: Configure Tomcat Users and Management Access
+Navigate to manager/ and host-manager/ directories:
+
+bash
+Copy
+Edit
+cd webapps/manager/
+# Comment the Valve tag in context.xml
+bash
+Copy
+Edit
+cd ../host-manager/
+# Comment the Valve tag in context.xml
+Change credentials in conf/tomcat-users.xml:
+
+bash
+Copy
+Edit
+cd ../../conf/
+nano tomcat-users.xml
+Add your admin roles and user credentials.
+
+✅ Successfully deployed the project!
+
+Let me know if you'd like this in a downloadable .md file or expanded into a tutorial-style document.
+
+
+
+
+
+
+
+
