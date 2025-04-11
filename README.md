@@ -22,13 +22,13 @@ ubuntu@ip-172-31-25-35:~$ git clone https://github.com/HouariZegai/Calculator.gi
 
 "sudo apt install maven" to install maven
 
-maven validate   to validate the project 
+maven validate         (to validate the project) 
 
-mvn test          to test the project
+mvn test                (to test the project)
 
-wget <link> to install the tar file
+wget <link> to install the tar file     (tomcat)
 
-tar -xvf  apache-tomcat-9.0.102.tar.gz
+tar -xvf  apache-tomcat-9.0.102.tar.gz     (To unzip the file)
 
 go to cd bin
 ./startup.sh
@@ -41,7 +41,7 @@ we have to shutdown the server means
 
 go to security group and edit the inbound rules
 
-to keep it as all tcp  and anywhere ipv4
+to keep it as all tcp  and anywhere ipv4  0.0.0.0 
 
 cp -r TrainBook-1.0.0-SNAPSHOT.war ~/Train-Ticket-Reservation-System/apache-tomcat-9.0.102/webapps
 
@@ -56,6 +56,9 @@ to comment the valve
 cd config/
 
  tomcat-users.xml    to change the credientials
+
+sucessfully deployed the project
+
 
  
 
